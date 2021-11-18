@@ -1,2 +1,7 @@
-# ID_P02_Jeff_Test
-My first git. Week 4 testing
+# SneakersOfFame
+My project is about providing sneaker botting services to help you cop the shoes that you want.
+
+## Design Process
+This website is mainly for sneakerheads who wants to cop all the latest heat shoe drops.
+## Features
+
