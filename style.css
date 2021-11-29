@@ -186,3 +186,35 @@
         transform: translateY(-8px) rotate(-45deg); 
     }
 }
+
+/* Hero Section */
+.hero {
+    background: rgb(6,43,43);
+background: linear-gradient(0deg, rgba(6,43,43,1) 0%, rgba(183,22,187,1) 100%);
+    padding: 200px 0;
+}
+
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero_heading {
+    font-size: 120px;
+    margin-bottom: 24px;
+    color: blue;
+}
+
+.hero_heading span {
+    background: #77A1D3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
