@@ -89,11 +89,150 @@
     transition: all 0.3s ease;
 }
 
-.navbar_links:hover {
+.navbar_links:hover { /* hover actions need one here and at the navbar_links for cleaner animation effect */
     color: magenta;
     transition: all 0.3s ease;
 }
 
-@media screen {
-    
+@media screen and (max-width: 960px) {
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px; /* dropdown effect at the top */
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .navbar_menu.active { /* all navbar menu active, when you click on icon, it showcases it. */
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh; /* 60% of the viewport */
+        font-size: 1.6rem;
+    }
+
+    #navbar_logo {
+        padding-left: 25px; /* move it to the right a bit */
+    }
+
+    .navbar_toggle .bar { /*creating the actual handle menu */
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: white;
+    }
+
+    .navbar_item {
+        width: 100%;
+    }
+
+    .navbar_links { /* center the menu links */
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .navbar_button { /* have little spacing */
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin: 0;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+/* this section creates the rotating toggle button to X effect with the help of javascript */
+    #mobile-menu.is-active .bar:nth-child(2) { /* targetting the second child */
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) { /* targetting the second child */
+        transform: translateY(8px) rotate(45deg); 
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) { /* targetting the second child */
+        transform: translateY(-8px) rotate(-45deg); 
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: rgb(6,43,43);
+background: linear-gradient(0deg, rgba(6,43,43,1) 0%, rgba(183,22,187,1) 100%);
+    padding: 200px 0;
+}
+
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Cop your shoes text */
+.hero_heading {
+    font-size: 120px;
+    margin-bottom: 24px;
+    color: rgb(132, 0, 255);
+}
+
+/* Shoes border colour */ 
+.hero_heading span {
+    background: #77A1D3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00d0ff, #00c2ff, #25b0ff, #6d9aff, #a37eff, #b86bff, #d24fff, #ee00ff, #e300ff, #d700ff, #cb00ff, #bf00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00d0ff, #00c2ff, #25b0ff, #6d9aff, #a37eff, #b86bff, #d24fff, #ee00ff, #e300ff, #d700ff, #cb00ff, #bf00ff);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.hero_description {
+    font-size: 60px;
+    background: #f857a6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
