@@ -7,31 +7,43 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-  <!--Navigation Bar-->
-  <nav class="navbar">
-    <div class="navbar_container">
-      <a href="#home" id="navbar_logo">SneakersOfFame</a>
-      <div class="navbar_toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="index.html" id="navbar_logo">SneakersOfFame</a>
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <li class="navbar_item">
+            <a href="index.html" class="navbar_links" id="home-page">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a href="about.html" class="navbar_links" id="about-page">About</a>
+          </li>
+          <li class="navbar_item">
+            <a href="services.html" class="navbar_links" id="services-page">Services</a>
+          </li>
+          <li class="navbar_button">
+            <a href="sign-up.html" class="button" id="signup-page">Sign Up</a>
+          </li>
+        </ul>
       </div>
-      <ul class="navbar_menu">
-        <li class="navbar_item">
-          <a href="#home" class="navbar_links" id="home-page">Home</a>
-        </li>
-        <li class="navbar_item">
-          <a href="#about" class="navbar_links" id="about-page">About</a>
-        </li>
-        <li class="navbar_item">
-          <a href="#Services" class="navbar_links" id="services-page">Services</a>
-        </li>
-        <li class="navbar_button">
-          <a href="#sign-up" class="button" id="signup-page">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
 
+    <!--Hero Section-->
+    <div class="hero" id="home">
+      <div class="hero_container">
+        <h1 class="hero_heading">Cop your <span>shoes</span></h1>
+        <p class="hero_description">Worldwide Drops</p>
+        <button class="main_button"><a href="#">Dive in</a></button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+
+    <!--About Page-->
+  </body>
 </html>
