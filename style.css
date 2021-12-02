@@ -118,7 +118,7 @@
     }
 
     .navbar_menu.active { /* all navbar menu active, when you click on icon, it showcases it. */
-        background: #131313;
+        background: black;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -190,7 +190,7 @@
 /* Hero Section */
 .hero {
     background: rgb(6,43,43);
-background: linear-gradient(0deg, rgba(6,43,43,1) 0%, rgba(183,22,187,1) 100%);
+    background: linear-gradient(0deg, rgba(6,43,43,1) 0%, rgba(183,22,187,1) 100%);
     padding: 200px 0;
 }
 
@@ -224,7 +224,7 @@ background: linear-gradient(0deg, rgba(6,43,43,1) 0%, rgba(183,22,187,1) 100%);
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
-
+/* Worldwide Drops text styling */
 .hero_description {
     font-size: 60px;
     background: #f857a6;  /* fallback for old browsers */
@@ -235,4 +235,226 @@ background: linear-gradient(0deg, rgba(6,43,43,1) 0%, rgba(183,22,187,1) 100%);
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+.highlight {
+    border-bottom: 4px solid magenta;
+}
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .hero_heading {
+        font-size: 60px;
+    }
+
+    .hero_description {
+        font-size: 40px;
+    }
+}
+
+/* About Section */
+.main {
+    background-color: #1f1919;
+    padding: 10rem 0;
+}
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50 px;
+}
+/* colour text */
+.main_content {
+    color: #8a5be9;
+    width: 100%;
+}
+
+.main_content h1 {
+    font-size: 2rem;
+    background-color: red;
+    background-image: linear-gradient(to right, #631579, #6916d4, #a900f7, #9a02f3, #8904ef, #624bfd, #3669ff, #007fff, #00a8ff, #00c8ff, #00e4ee, #5ffbd6); /* Change the home text colour gradient */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.main_content h2 {
+    font-size: 4rem;
+    background: #e6167a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec1c1c, #ec2c89);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main_content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main_button {
+    font-size: 1.8rem;
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main_button a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+/* help with the button transition */
+.main_button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: magenta;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main_button:hover {
+    color: white;
+}
+
+.main_button:hover:after {
+    width: 100%;
+}
+
+.main_img_container {
+    text-align: center;
+}
+
+.main_img_card {
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(to right, #f708d7 0%, #0ec5e6 100%);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 1100px) {
+    .main_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+    .main_img_container {
+        display: flex;
+        justify-content: center;
+    }
+    .main_img_card {
+        height: 425px;
+        width: 425px;
+    }
+
+    .main_content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .main_content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .main_content h2 {
+        font-size: 3rem;
+    }
+    .main_content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_img_card {
+        width: 250px;
+        height: 250px;
+    }
+    .main_content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .main_content h2 {
+        font-size: 2rem;
+    }
+    .main_content p {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .main_button {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/* Services Styling*/
+.services {
+    background: #1f1919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+/* Text colour */
+.services h1 {
+    background-color: white;
+    background-image: linear-gradient(to right, #c800ff, #b900fb, #a900f7, #9a02f3, #8904ef, #624bfd, #3669ff, #007fff, #00a8ff, #00c8ff, #00e4ee, #5ffbd6); /* Change the home text colour gradient */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.services_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servies_card {
+    margin: 1 rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: url('/ID_P02_Jeff_Test/images/techsupport.jpg');
+    background-size: cover;
 }
