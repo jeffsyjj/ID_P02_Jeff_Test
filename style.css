@@ -457,14 +457,14 @@
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, #00000000 0%, #11111199 100%), url('/ID_P02_Jeff_Test/images/techsupport.jpg');
+    background-image: linear-gradient(to bottom, #00000000 0%, #11111199 100%), url('/images/techsupport.jpg');
     background-size: cover;
     position: relative;
     color: white;
 }
 
 .services_card:nth-child(2){
-    background-image: linear-gradient(to bottom, #00000000 0%, #11111199 100%), url('/ID_P02_Jeff_Test/images/sneakers.jpeg');
+    background-image: linear-gradient(to bottom, #00000000 0%, #11111199 100%), url('/images/sneakers.jpeg');
 }
 
 .services h2 {
