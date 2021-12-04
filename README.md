@@ -50,7 +50,7 @@ Featuring my website features.
 
 ## External source code used
 - Section card images
-    https://www.iconfinder.com/icons/924444/footwear_keds_nike_run_shoe_shoes_sneaker_icon
+    - https://www.iconfinder.com/icons/924444/footwear_keds_nike_run_shoe_shoes_sneaker_icon
 - Website gradients
     - https://mycolor.space/gradient3?ori=to+right+top&hex=%23D16BA5&hex2=%2386A8E7&hex3=%235FFBF1&submit=submit
     - https://uigradients.com/#Metapolis
